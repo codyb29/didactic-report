@@ -1,0 +1,51 @@
+div.row {
+    margin-top: 5em;
+}
+
+hr {
+    border: .2em solid black;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+p {
+    font-size: 1.5em;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: justify;
+}
+
+div.card {
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 2em;
+    min-width: 218px;
+}
+
+.btn.btn-outline-primary {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.form-control {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+label {
+    font-size: 2em;
+}
+
+@media (max-width: 544px) {  
+    p {font-size: 1rem;} /*1rem = 16px*/
+    .display-3 { font-size: 3.5rem; }
+}
+   
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 545px) {  
+    p {font-size: 1.25rem;} /*1rem = 16px*/
+}
+
+@media (min-width: 768px) {  
+    p {font-size: 1.7rem;} /*1rem = 16px*/
+}
