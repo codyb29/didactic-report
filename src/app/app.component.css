@@ -10,3 +10,11 @@
 #searchBar {
     margin-left: auto;
 }
+
+div.row {
+    margin-top: 5em;
+    margin-right: 0em;
+    margin-left: 0em;
+}
+
+@media (max-width: 575.98px) { div.row { margin-top: .5em;} }
