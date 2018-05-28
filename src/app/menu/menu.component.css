@@ -1,9 +1,3 @@
-div.row {
-    margin-top: 5em;
-    margin-right: 0em;
-    margin-left: 0em;
-}
-
 hr {
     border: .2em solid black;
 }
@@ -13,39 +7,15 @@ p {
     text-align: center;
 }
 
-div.card {
-    margin-bottom: 2em;
-    min-width: 210px;
-}
-
-.form-control, .btn.btn-outline-primary {
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-label {
-    font-size: 2em;
-}
-
-aside {
-    max-width: 100%;
-}
-
 @media (max-width: 575.98px) {  
-    div.row { margin-top: .5em;}
     p {font-size: 1rem;} /*1rem = 16px*/
     .display-3 { font-size: 2.5rem; }
     hr { border-width: .1em; }
-    div.card { max-width: 20em; }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {  
     p {font-size: 1rem;} /*1rem = 16px*/
     .display-3 { font-size: 2.5rem; }
-    .form-control, .btn.btn-outline-primary {
-        padding-top: .5em;
-        padding-bottom: .5em;
-    }
 }
 
 /* Medium devices (tablets, 768px and up) */

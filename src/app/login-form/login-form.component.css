@@ -1,0 +1,25 @@
+div.card {
+    margin-bottom: 2em;
+    min-width: 210px;
+}
+
+.form-control, .btn.btn-outline-primary {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+label {
+    font-size: 2em;
+}
+
+aside {
+    max-width: 100%;
+}
+
+@media (max-width: 575.98px) { div.card { max-width: 20em; } }
+@media (min-width: 576px) and (max-width: 767.98px) {  
+    .form-control, .btn.btn-outline-primary {
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+}
