@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+<<<<<<< Updated upstream:src/app/user.service.ts
 import { users } from './MongoDbEmulator';
 import { UserProfile } from './UserProfile';
 import { Observable, of } from 'rxjs';
@@ -9,13 +10,33 @@ import { Observable, of } from 'rxjs';
 export class UserService {
 
   constructor() { }
+=======
+import { HttpClient } from '@angular/common/http';
 
-  authenticateUser (userID: string, password: string) {
-    for (var i = 0; i < users.length; i++) {
-      if (userID === users[i].userID && password === users[i].password) {
-        return of(true);
-      }
-    }
-    return of(false);
+import { User } from '../_models/UserProfile';
+
+@Injectable()
+export class UserService {
+  constructor(private http: HttpClient) { }
+
+  getAll() {
+    return this.http.get<User[]>('/api/users');
+  }
+>>>>>>> Stashed changes:src/app/_services/user.service.ts
+
+  getById(id: number) {
+    return this.http.get('/api/users/' + id);
+  }
+
+  create(user: User) {
+    return this.http.post('/api/users', user);
+  }
+
+  update(user: User) {
+    return this.http.put('/api/users/' + user.id, user);
+  }
+
+  delete(id: number) {
+    return this.http.delete('/api/users/' + id);
   }
 }
