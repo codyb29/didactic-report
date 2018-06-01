@@ -21,13 +21,7 @@
     "@angular/platform-browser-dynamic": "^6.0.2",
     "@angular/platform-server": "^6.0.3",
     "@angular/router": "^6.0.2",
-<<<<<<< Updated upstream
     "bootstrap": "^4.1.1",
-=======
-    "@nguniversal/express-engine": "^6.0.0",
-    "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
-    "angular-in-memory-web-api": "^0.6.0",
->>>>>>> Stashed changes
     "core-js": "^2.5.4",
     "hoek": "^5.0.3",
     "jquery": "^3.3.1",
