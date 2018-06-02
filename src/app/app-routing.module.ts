@@ -1,23 +1,17 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+import { MockHomeComponent } from './pages/mock-home/mock-home.component';
+import { CallbackComponent } from './pages/callback/callback.component';
+import { LoginComponent } from './pages/login/login.component';
 
-import { MockHomePageComponent } from './mock-home-page/mock-home-page.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { MenuComponent } from './menu/menu.component';
-import { LoginFormComponent } from './login-form/login-form.component';
-
-const appRoutes: Routes = [
-  { path: 'login', component: LoginFormComponent },
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
-  { path: '**', component: PageNotFoundComponent }
+const routes: Routes = [
+  { path: 'login', component: LoginComponent },
+  { path: '', component: MockHomeComponent },
+  { path: 'callback', component: CallbackComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(
-    appRoutes,
-    { enableTracing: true } // <-- debugging purposes only
-  )],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

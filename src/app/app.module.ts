@@ -1,27 +1,31 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule }   from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+
+import { AuthService } from './auth/auth.service';
 
 import { AppComponent } from './app.component';
-import { LoginFormComponent } from './login-form/login-form.component';
-import { MenuComponent } from './menu/menu.component';
-import { MockHomePageComponent } from './mock-home-page/mock-home-page.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
+import { MockHomeComponent } from './pages/mock-home/mock-home.component';
+import { HeaderComponent } from './header/header.component';
+import { CallbackComponent } from './pages/callback/callback.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginFormComponent,
-    MenuComponent,
-    MockHomePageComponent,
-    PageNotFoundComponent
+    MockHomeComponent,
+    HeaderComponent,
+    CallbackComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    Title,
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
