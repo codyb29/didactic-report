@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, ReactiveFormsModule, FormGroup, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { AuthService } from '../../auth/auth.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -7,11 +9,15 @@ import { FormBuilder, ReactiveFormsModule, FormGroup, Validators } from '@angula
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
 
-  constructor() { }
 
-  ngOnInit() {
+  constructor(private authorize: AuthService) {}
+
+  ngOnInit() {}
+
+  verifyUser () {
+    this.authorize.login();
   }
 
 }

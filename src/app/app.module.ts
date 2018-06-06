@@ -7,16 +7,16 @@ import { AuthService } from './auth/auth.service';
 import { AppComponent } from './app.component';
 import { MockHomeComponent } from './pages/mock-home/mock-home.component';
 import { HeaderComponent } from './header/header.component';
-import { CallbackComponent } from './pages/callback/callback.component';
 import { LoginComponent } from './pages/login/login.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MockHomeComponent,
     HeaderComponent,
-    CallbackComponent,
-    LoginComponent
+    LoginComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

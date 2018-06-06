@@ -11,6 +11,5 @@ export class AppComponent {
 
   constructor(private auth: AuthService) {
     // Check for authentication and handle if hash present
-    auth.handleAuthentication();
   }
 }

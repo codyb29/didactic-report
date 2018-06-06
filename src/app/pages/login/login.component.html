@@ -20,13 +20,13 @@
             <form class="mx-auto">
               <div class="form-group">
                 <label for="usr">User ID</label>
-                <input type="text" class="form-control" id="usr" required name="usr">
+                <input type="text" class="form-control" required name="usr">
               </div>
               <div class="form-group">
                 <label for="pwd">Password</label>
-                <input type="password" class="form-control" id="pwd" required name="pwd">
+                <input type="password" class="form-control" required name="pwd">
               </div>
-              <button type="submit" class="btn form-control btn-outline-primary">Sign in</button>
+              <button type="submit" class="btn form-control btn-outline-primary" (click)="login()">Sign in</button>
             </form>
             <br>
           </div>
